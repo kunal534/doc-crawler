@@ -38,3 +38,6 @@ To set up the project locally:
    ```bash
    streamlist app.py
 
+## Contributing
+
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. Ensure that your code adheres to the existing coding standards and includes appropriate tests.

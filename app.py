@@ -62,3 +62,12 @@ if submitted and urls:
             with open(output_path, "w") as f:
                 json.dump(cleaned_modules, f, indent=2)
             st.success(f"Output saved to {output_path}")
+
+            # Add download button for JSON export
+            json_data = json.dumps(cleaned_modules, indent=2, ensure_ascii=False)
+            st.download_button(
+                label="Download Results as JSON",
+                data=json_data,
+                file_name="documentation_modules.json",
+                mime="application/json"
+            )
